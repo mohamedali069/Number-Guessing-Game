@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Number Gussing Game</title>
+    <title> temperature conversion program</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h2>Number Guessing Game</h2>
-        <div class="rules">
-            <h3>Rules</h3>
-            <p> -   Enter Number Between 1 - 100</p>
-
-        </div>
-            
    
-        
-        
-        <input type="number" id="guessNumber"  placeholder="Enter Your Guess Number">
-        <button id="submit">submit</button>
-        <p id="guessText" class="guessText" ></p>
-    </div>
+   <form>
+    <h2>Temperature Conversion:</h2>
+
+    <input type="number" value="0" id="textBox">
+    <br>
+    <input type="radio" id="toFahrenheit" name="unit">
+    <label for="toFahrenheit"> Celsius To Fahrenheit</label>
+    <br>
+    <input type="radio" id="toCelsius" name="unit">
+    <label for="toCelsius"> Fahrenheit To Celsius</label>
+    <br>
+    <button type="button" onclick="convert()" id="submit">Submit</button>
+    <p id="result"></p>
+   </form>
 
 
 
